@@ -5,12 +5,16 @@ PROJECT_NAME = Prime
 BUILD = build
 
 # All source code files
-SRC = project_main.c\
-src/calculator_operations.c\
+SRC = unity/unity.c\
+src/factorial.c\
+test/test_factorial.c\
+main.c
 
-# All test source files
-TEST_SRC = src/calculator_operations.c\
-test/test_calculator_operations.c
+INC = -Iunity\
+-Iinc\
+-Itest
+
+PROJECT_NAME = FACTORIAL.out
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
